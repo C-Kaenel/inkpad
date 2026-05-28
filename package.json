@@ -2,3 +2,8 @@
   "name": "inkpad",
   "version": "1.0.0",
   "description": "A fast, offline-first Markdown notebook that runs entirely in the browser.",
+  "type": "module",
+  "scripts": {
+    "start": "npx serve .",
+    "test": "node --test \"test/*.test.mjs\""
+  },
