@@ -7,3 +7,4 @@
     "start": "npx serve .",
     "test": "node --test \"test/*.test.mjs\""
   },
+  "license": "MIT"
