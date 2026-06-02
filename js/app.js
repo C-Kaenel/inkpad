@@ -3,3 +3,4 @@ import { NoteStore, relativeTime, wordCount } from './notes.js';
 
 const $ = (sel) => document.querySelector(sel);
 
+const els = {
