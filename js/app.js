@@ -5,3 +5,7 @@ const $ = (sel) => document.querySelector(sel);
 
 const els = {
   list: $('#note-list'),
+  tags: $('#tag-list'),
+  search: $('#search'),
+  editor: $('#editor'),
+  preview: $('#preview'),
