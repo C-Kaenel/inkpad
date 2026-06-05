@@ -9,3 +9,5 @@ const els = {
   search: $('#search'),
   editor: $('#editor'),
   preview: $('#preview'),
+  workspace: $('#workspace'),
+  meta: $('#meta'),
