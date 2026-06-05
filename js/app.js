@@ -11,3 +11,5 @@ const els = {
   preview: $('#preview'),
   workspace: $('#workspace'),
   meta: $('#meta'),
+  newBtn: $('#new-note'),
+  pinBtn: $('#pin-note'),
