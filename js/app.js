@@ -27,3 +27,4 @@ const state = {
   mode: localStorage.getItem('inkpad.mode') || 'split',
 };
 
+function debounce(fn, ms) {
