@@ -13,3 +13,5 @@ const els = {
   meta: $('#meta'),
   newBtn: $('#new-note'),
   pinBtn: $('#pin-note'),
+  deleteBtn: $('#delete-note'),
+  modeBtn: $('#toggle-mode'),
