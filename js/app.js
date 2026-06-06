@@ -35,3 +35,4 @@ function debounce(fn, ms) {
   };
 }
 
+function renderList() {
