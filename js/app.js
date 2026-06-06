@@ -20,3 +20,4 @@ const els = {
   importInput: $('#import'),
 };
 
+const store = new NoteStore();
