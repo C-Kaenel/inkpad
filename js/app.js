@@ -21,3 +21,8 @@ const els = {
 };
 
 const store = new NoteStore();
+const state = {
+  activeId: store.notes[0]?.id ?? null,
+  tag: null,
+  mode: localStorage.getItem('inkpad.mode') || 'split',
+};
