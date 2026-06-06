@@ -26,3 +26,4 @@ const state = {
   tag: null,
   mode: localStorage.getItem('inkpad.mode') || 'split',
 };
+
