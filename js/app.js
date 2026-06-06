@@ -15,3 +15,7 @@ const els = {
   pinBtn: $('#pin-note'),
   deleteBtn: $('#delete-note'),
   modeBtn: $('#toggle-mode'),
+  themeBtn: $('#toggle-theme'),
+  exportBtn: $('#export'),
+  importInput: $('#import'),
+};
