@@ -36,3 +36,4 @@ function debounce(fn, ms) {
 }
 
 function renderList() {
+  const notes = store.search({ query: els.search.value, tag: state.tag });
