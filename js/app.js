@@ -47,3 +47,5 @@ function renderList() {
     li.className = 'note-item' + (note.id === state.activeId ? ' active' : '');
     li.dataset.id = note.id;
     const preview = note.body.replace(/^#.*$/m, '').replace(/[#*_`>[\]-]/g, '').trim().slice(0, 80);
+    li.innerHTML = `
+      <div class="note-title">${note.pinned ? '<span class="pin">📌</span>' : ''}${escape(note.title)}</div>
