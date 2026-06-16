@@ -43,3 +43,4 @@ function renderList() {
     return;
   }
   for (const note of notes) {
+    const li = document.createElement('li');
