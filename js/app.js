@@ -44,3 +44,6 @@ function renderList() {
   }
   for (const note of notes) {
     const li = document.createElement('li');
+    li.className = 'note-item' + (note.id === state.activeId ? ' active' : '');
+    li.dataset.id = note.id;
+    const preview = note.body.replace(/^#.*$/m, '').replace(/[#*_`>[\]-]/g, '').trim().slice(0, 80);
