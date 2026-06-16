@@ -42,3 +42,4 @@ function renderList() {
     els.list.innerHTML = '<li class="empty">No notes found</li>';
     return;
   }
+  for (const note of notes) {
