@@ -37,3 +37,8 @@ function debounce(fn, ms) {
 
 function renderList() {
   const notes = store.search({ query: els.search.value, tag: state.tag });
+  els.list.innerHTML = '';
+  if (!notes.length) {
+    els.list.innerHTML = '<li class="empty">No notes found</li>';
+    return;
+  }
