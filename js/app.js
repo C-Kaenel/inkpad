@@ -49,3 +49,7 @@ function renderList() {
     const preview = note.body.replace(/^#.*$/m, '').replace(/[#*_`>[\]-]/g, '').trim().slice(0, 80);
     li.innerHTML = `
       <div class="note-title">${note.pinned ? '<span class="pin">📌</span>' : ''}${escape(note.title)}</div>
+      <div class="note-snippet">${escape(preview) || '<em>Empty note</em>'}</div>
+      <div class="note-date">${relativeTime(note.updated)}</div>`;
+    els.list.appendChild(li);
+  }
