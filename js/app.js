@@ -53,3 +53,4 @@ function renderList() {
       <div class="note-date">${relativeTime(note.updated)}</div>`;
     els.list.appendChild(li);
   }
+}
