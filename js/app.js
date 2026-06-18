@@ -55,3 +55,4 @@ function renderList() {
   }
 }
 
+function renderTags() {
