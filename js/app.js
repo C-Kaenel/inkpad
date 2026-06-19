@@ -56,3 +56,6 @@ function renderList() {
 }
 
 function renderTags() {
+  const tags = store.allTags();
+  els.tags.innerHTML = '';
+  const all = document.createElement('button');
