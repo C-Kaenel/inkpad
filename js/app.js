@@ -70,3 +70,4 @@ function renderTags() {
     chip.onclick = () => selectTag(tag);
     els.tags.appendChild(chip);
   }
+}
