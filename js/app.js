@@ -85,3 +85,6 @@ function renderEditor() {
     return;
   }
   if (els.editor.value !== note.body) els.editor.value = note.body;
+  els.pinBtn.textContent = note.pinned ? 'Unpin' : 'Pin';
+  renderPreview();
+}
