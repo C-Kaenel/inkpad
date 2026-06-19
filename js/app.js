@@ -90,3 +90,6 @@ function renderEditor() {
 }
 
 function renderPreview() {
+  const text = els.editor.value;
+  els.preview.innerHTML = renderMarkdown(text);
+  const note = store.get(state.activeId);
