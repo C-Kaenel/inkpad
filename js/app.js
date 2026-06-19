@@ -61,3 +61,6 @@ function renderTags() {
   const all = document.createElement('button');
   all.textContent = 'All notes';
   all.className = 'chip' + (state.tag === null ? ' active' : '');
+  all.onclick = () => selectTag(null);
+  els.tags.appendChild(all);
+  for (const [tag, count] of tags) {
