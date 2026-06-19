@@ -72,3 +72,4 @@ function renderTags() {
   }
 }
 
+function renderEditor() {
