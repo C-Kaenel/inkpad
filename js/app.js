@@ -80,3 +80,7 @@ function renderEditor() {
   els.deleteBtn.disabled = !hasNote;
   if (!hasNote) {
     els.editor.value = '';
+    els.preview.innerHTML = '<p class="placeholder">Select or create a note.</p>';
+    els.meta.textContent = '';
+    return;
+  }
