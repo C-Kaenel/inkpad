@@ -76,3 +76,5 @@ function renderEditor() {
   const note = store.get(state.activeId);
   const hasNote = Boolean(note);
   els.editor.disabled = !hasNote;
+  els.pinBtn.disabled = !hasNote;
+  els.deleteBtn.disabled = !hasNote;
