@@ -78,3 +78,5 @@ function renderEditor() {
   els.editor.disabled = !hasNote;
   els.pinBtn.disabled = !hasNote;
   els.deleteBtn.disabled = !hasNote;
+  if (!hasNote) {
+    els.editor.value = '';
