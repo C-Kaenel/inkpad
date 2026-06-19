@@ -89,3 +89,4 @@ function renderEditor() {
   renderPreview();
 }
 
+function renderPreview() {
