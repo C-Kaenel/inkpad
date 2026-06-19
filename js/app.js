@@ -84,3 +84,4 @@ function renderEditor() {
     els.meta.textContent = '';
     return;
   }
+  if (els.editor.value !== note.body) els.editor.value = note.body;
