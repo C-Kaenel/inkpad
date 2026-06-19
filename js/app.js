@@ -66,3 +66,7 @@ function renderTags() {
   for (const [tag, count] of tags) {
     const chip = document.createElement('button');
     chip.className = 'chip' + (state.tag === tag ? ' active' : '');
+    chip.innerHTML = `#${escape(tag)} <span>${count}</span>`;
+    chip.onclick = () => selectTag(tag);
+    els.tags.appendChild(chip);
+  }
