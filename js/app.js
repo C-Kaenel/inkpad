@@ -64,3 +64,5 @@ function renderTags() {
   all.onclick = () => selectTag(null);
   els.tags.appendChild(all);
   for (const [tag, count] of tags) {
+    const chip = document.createElement('button');
+    chip.className = 'chip' + (state.tag === tag ? ' active' : '');
