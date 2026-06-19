@@ -88,3 +88,4 @@ function renderEditor() {
   els.pinBtn.textContent = note.pinned ? 'Unpin' : 'Pin';
   renderPreview();
 }
+
