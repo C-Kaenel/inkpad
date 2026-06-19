@@ -73,3 +73,6 @@ function renderTags() {
 }
 
 function renderEditor() {
+  const note = store.get(state.activeId);
+  const hasNote = Boolean(note);
+  els.editor.disabled = !hasNote;
