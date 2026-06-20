@@ -98,3 +98,4 @@ function renderPreview() {
     (note ? ` · edited ${relativeTime(note.updated)}` : '');
 }
 
+function applyMode() {
