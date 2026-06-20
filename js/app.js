@@ -104,3 +104,4 @@ function applyMode() {
   localStorage.setItem('inkpad.mode', state.mode);
 }
 
+function cycleMode() {
