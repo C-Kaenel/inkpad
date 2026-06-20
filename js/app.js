@@ -110,3 +110,4 @@ function cycleMode() {
   applyMode();
 }
 
+function selectNote(id) {
