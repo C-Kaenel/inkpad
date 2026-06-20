@@ -97,3 +97,4 @@ function renderPreview() {
   els.meta.textContent = `${words} words · ${Math.max(1, Math.round(words / 200))} min read` +
     (note ? ` · edited ${relativeTime(note.updated)}` : '');
 }
+
