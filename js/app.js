@@ -111,3 +111,7 @@ function cycleMode() {
 }
 
 function selectNote(id) {
+  state.activeId = id;
+  renderList();
+  renderEditor();
+}
