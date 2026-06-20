@@ -93,3 +93,7 @@ function renderPreview() {
   const text = els.editor.value;
   els.preview.innerHTML = renderMarkdown(text);
   const note = store.get(state.activeId);
+  const words = wordCount(text);
+  els.meta.textContent = `${words} words · ${Math.max(1, Math.round(words / 200))} min read` +
+    (note ? ` · edited ${relativeTime(note.updated)}` : '');
+}
