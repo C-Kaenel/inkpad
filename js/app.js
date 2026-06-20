@@ -99,3 +99,7 @@ function renderPreview() {
 }
 
 function applyMode() {
+  els.workspace.dataset.mode = state.mode;
+  els.modeBtn.textContent = { split: 'Split', edit: 'Edit', preview: 'Preview' }[state.mode];
+  localStorage.setItem('inkpad.mode', state.mode);
+}
