@@ -105,3 +105,7 @@ function applyMode() {
 }
 
 function cycleMode() {
+  const order = ['split', 'edit', 'preview'];
+  state.mode = order[(order.indexOf(state.mode) + 1) % order.length];
+  applyMode();
+}
