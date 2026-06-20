@@ -109,3 +109,4 @@ function cycleMode() {
   state.mode = order[(order.indexOf(state.mode) + 1) % order.length];
   applyMode();
 }
+
