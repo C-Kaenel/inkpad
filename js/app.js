@@ -122,3 +122,4 @@ function selectTag(tag) {
   renderList();
 }
 
+function newNote() {
