@@ -116,3 +116,8 @@ function selectNote(id) {
   renderEditor();
 }
 
+function selectTag(tag) {
+  state.tag = tag;
+  renderTags();
+  renderList();
+}
