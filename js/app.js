@@ -103,3 +103,4 @@ function applyMode() {
   els.modeBtn.textContent = { split: 'Split', edit: 'Edit', preview: 'Preview' }[state.mode];
   localStorage.setItem('inkpad.mode', state.mode);
 }
+
