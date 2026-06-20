@@ -123,3 +123,8 @@ function selectTag(tag) {
 }
 
 function newNote() {
+  const note = store.create(state.tag ? `# New note\n\n#${state.tag}\n` : undefined);
+  selectNote(note.id);
+  els.editor.focus();
+  els.editor.setSelectionRange(2, 10);
+}
