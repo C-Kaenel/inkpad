@@ -128,3 +128,4 @@ function newNote() {
   els.editor.focus();
   els.editor.setSelectionRange(2, 10);
 }
+
