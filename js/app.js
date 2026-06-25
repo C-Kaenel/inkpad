@@ -131,3 +131,5 @@ function newNote() {
 
 function deleteNote() {
   const note = store.get(state.activeId);
+  if (!note || !confirm('Delete this note?')) return;
+  store.remove(note.id);
