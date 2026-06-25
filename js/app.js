@@ -133,3 +133,8 @@ function deleteNote() {
   const note = store.get(state.activeId);
   if (!note || !confirm('Delete this note?')) return;
   store.remove(note.id);
+  state.activeId = store.search()[0]?.id ?? null;
+  renderTags();
+  renderList();
+  renderEditor();
+}
