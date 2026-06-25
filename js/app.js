@@ -130,3 +130,4 @@ function newNote() {
 }
 
 function deleteNote() {
+  const note = store.get(state.activeId);
