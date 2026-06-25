@@ -144,3 +144,4 @@ function escape(text) {
   div.textContent = text;
   return div.innerHTML;
 }
+
