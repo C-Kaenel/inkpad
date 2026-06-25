@@ -139,3 +139,4 @@ function deleteNote() {
   renderEditor();
 }
 
+function escape(text) {
