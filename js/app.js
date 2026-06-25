@@ -129,3 +129,4 @@ function newNote() {
   els.editor.setSelectionRange(2, 10);
 }
 
+function deleteNote() {
