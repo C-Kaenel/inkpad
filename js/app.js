@@ -170,3 +170,4 @@ function exportNotes() {
   URL.revokeObjectURL(a.href);
 }
 
+async function importNotes(event) {
