@@ -172,3 +172,7 @@ function exportNotes() {
 
 async function importNotes(event) {
   const file = event.target.files[0];
+  if (!file) return;
+  try {
+    const count = store.importJson(await file.text());
+    alert(`Imported ${count} notes`);
