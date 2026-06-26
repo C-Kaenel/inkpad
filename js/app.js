@@ -146,3 +146,8 @@ function escape(text) {
 }
 
 const save = debounce(() => {
+  store.update(state.activeId, els.editor.value);
+  renderList();
+  renderTags();
+}, 300);
+
