@@ -154,3 +154,9 @@ const save = debounce(() => {
 function handleTab(event) {
   if (event.key !== 'Tab') return;
   event.preventDefault();
+  const { selectionStart: start, selectionEnd: end, value } = els.editor;
+  els.editor.value = value.slice(0, start) + '  ' + value.slice(end);
+  els.editor.selectionStart = els.editor.selectionEnd = start + 2;
+  renderPreview();
+  save();
+}
