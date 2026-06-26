@@ -181,3 +181,4 @@ async function importNotes(event) {
   } catch (err) {
     alert(`Import failed: ${err.message}`);
   }
+  event.target.value = '';
