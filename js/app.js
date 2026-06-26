@@ -161,3 +161,4 @@ function handleTab(event) {
   save();
 }
 
+function exportNotes() {
