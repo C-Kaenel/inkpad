@@ -153,3 +153,4 @@ const save = debounce(() => {
 
 function handleTab(event) {
   if (event.key !== 'Tab') return;
+  event.preventDefault();
