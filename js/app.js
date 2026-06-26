@@ -171,3 +171,4 @@ function exportNotes() {
 }
 
 async function importNotes(event) {
+  const file = event.target.files[0];
