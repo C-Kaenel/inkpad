@@ -162,3 +162,4 @@ function handleTab(event) {
 }
 
 function exportNotes() {
+  const blob = new Blob([store.exportJson()], { type: 'application/json' });
