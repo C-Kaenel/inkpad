@@ -176,3 +176,8 @@ async function importNotes(event) {
   try {
     const count = store.importJson(await file.text());
     alert(`Imported ${count} notes`);
+    renderTags();
+    renderList();
+  } catch (err) {
+    alert(`Import failed: ${err.message}`);
+  }
