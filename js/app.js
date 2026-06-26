@@ -151,3 +151,4 @@ const save = debounce(() => {
   renderTags();
 }, 300);
 
+function handleTab(event) {
