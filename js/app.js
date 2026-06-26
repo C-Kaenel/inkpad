@@ -163,3 +163,5 @@ function handleTab(event) {
 
 function exportNotes() {
   const blob = new Blob([store.exportJson()], { type: 'application/json' });
+  const a = document.createElement('a');
+  a.href = URL.createObjectURL(blob);
