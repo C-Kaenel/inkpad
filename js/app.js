@@ -184,3 +184,4 @@ async function importNotes(event) {
   event.target.value = '';
 }
 
+function applyTheme(theme) {
