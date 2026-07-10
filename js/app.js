@@ -185,3 +185,7 @@ async function importNotes(event) {
 }
 
 function applyTheme(theme) {
+  document.documentElement.dataset.theme = theme;
+  els.themeBtn.textContent = theme === 'dark' ? '☀' : '☾';
+  localStorage.setItem('inkpad.theme', theme);
+}
