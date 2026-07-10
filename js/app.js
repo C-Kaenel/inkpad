@@ -191,3 +191,7 @@ function applyTheme(theme) {
 }
 
 els.list.addEventListener('click', (e) => {
+  const item = e.target.closest('.note-item');
+  if (item) selectNote(item.dataset.id);
+});
+els.editor.addEventListener('input', () => {
