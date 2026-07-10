@@ -190,3 +190,4 @@ function applyTheme(theme) {
   localStorage.setItem('inkpad.theme', theme);
 }
 
+els.list.addEventListener('click', (e) => {
