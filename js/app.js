@@ -189,3 +189,4 @@ function applyTheme(theme) {
   els.themeBtn.textContent = theme === 'dark' ? '☀' : '☾';
   localStorage.setItem('inkpad.theme', theme);
 }
+
