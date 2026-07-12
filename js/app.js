@@ -207,3 +207,7 @@ els.pinBtn.addEventListener('click', () => {
   renderList();
   renderEditor();
 });
+els.modeBtn.addEventListener('click', cycleMode);
+els.themeBtn.addEventListener('click', () =>
+  applyTheme(document.documentElement.dataset.theme === 'dark' ? 'light' : 'dark'),
+);
