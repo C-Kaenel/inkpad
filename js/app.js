@@ -199,3 +199,5 @@ els.editor.addEventListener('input', () => {
   save();
 });
 els.editor.addEventListener('keydown', handleTab);
+els.search.addEventListener('input', debounce(renderList, 120));
+els.newBtn.addEventListener('click', newNote);
