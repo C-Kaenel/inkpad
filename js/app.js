@@ -201,3 +201,5 @@ els.editor.addEventListener('input', () => {
 els.editor.addEventListener('keydown', handleTab);
 els.search.addEventListener('input', debounce(renderList, 120));
 els.newBtn.addEventListener('click', newNote);
+els.deleteBtn.addEventListener('click', deleteNote);
+els.pinBtn.addEventListener('click', () => {
