@@ -205,3 +205,5 @@ els.deleteBtn.addEventListener('click', deleteNote);
 els.pinBtn.addEventListener('click', () => {
   store.togglePin(state.activeId);
   renderList();
+  renderEditor();
+});
