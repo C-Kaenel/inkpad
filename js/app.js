@@ -197,3 +197,5 @@ els.list.addEventListener('click', (e) => {
 els.editor.addEventListener('input', () => {
   renderPreview();
   save();
+});
+els.editor.addEventListener('keydown', handleTab);
