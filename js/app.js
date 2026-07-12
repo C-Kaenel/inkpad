@@ -195,3 +195,5 @@ els.list.addEventListener('click', (e) => {
   if (item) selectNote(item.dataset.id);
 });
 els.editor.addEventListener('input', () => {
+  renderPreview();
+  save();
