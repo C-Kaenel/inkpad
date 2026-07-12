@@ -212,3 +212,5 @@ els.themeBtn.addEventListener('click', () =>
   applyTheme(document.documentElement.dataset.theme === 'dark' ? 'light' : 'dark'),
 );
 els.exportBtn.addEventListener('click', exportNotes);
+els.importInput.addEventListener('change', importNotes);
+
