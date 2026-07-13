@@ -214,3 +214,4 @@ els.themeBtn.addEventListener('click', () =>
 els.exportBtn.addEventListener('click', exportNotes);
 els.importInput.addEventListener('change', importNotes);
 
+window.addEventListener('keydown', (e) => {
