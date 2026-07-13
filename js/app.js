@@ -218,3 +218,5 @@ window.addEventListener('keydown', (e) => {
   if (!(e.ctrlKey || e.metaKey)) return;
   const key = e.key.toLowerCase();
   if (key === 'n') {
+    e.preventDefault();
+    newNote();
