@@ -220,3 +220,5 @@ window.addEventListener('keydown', (e) => {
   if (key === 'n') {
     e.preventDefault();
     newNote();
+  } else if (key === 'k') {
+    e.preventDefault();
