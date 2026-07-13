@@ -215,3 +215,6 @@ els.exportBtn.addEventListener('click', exportNotes);
 els.importInput.addEventListener('change', importNotes);
 
 window.addEventListener('keydown', (e) => {
+  if (!(e.ctrlKey || e.metaKey)) return;
+  const key = e.key.toLowerCase();
+  if (key === 'n') {
