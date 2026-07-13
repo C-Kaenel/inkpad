@@ -222,3 +222,5 @@ window.addEventListener('keydown', (e) => {
     newNote();
   } else if (key === 'k') {
     e.preventDefault();
+    els.search.focus();
+    els.search.select();
