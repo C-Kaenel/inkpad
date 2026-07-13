@@ -224,3 +224,7 @@ window.addEventListener('keydown', (e) => {
     e.preventDefault();
     els.search.focus();
     els.search.select();
+  } else if (key === 'p') {
+    e.preventDefault();
+    cycleMode();
+  }
