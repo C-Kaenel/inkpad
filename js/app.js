@@ -229,3 +229,4 @@ window.addEventListener('keydown', (e) => {
     cycleMode();
   }
 });
+
