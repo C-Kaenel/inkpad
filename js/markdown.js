@@ -15,3 +15,4 @@ function safeUrl(url) {
   return /^(https?:|mailto:|#|\/|\.)/i.test(trimmed) ? trimmed : '#';
 }
 
+export function renderInline(text) {
