@@ -11,3 +11,6 @@ export function escapeHtml(text) {
 }
 
 function safeUrl(url) {
+  const trimmed = url.trim();
+  return /^(https?:|mailto:|#|\/|\.)/i.test(trimmed) ? trimmed : '#';
+}
