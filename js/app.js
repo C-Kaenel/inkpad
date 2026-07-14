@@ -235,3 +235,5 @@ const preferredTheme =
   (matchMedia('(prefers-color-scheme: dark)').matches ? 'dark' : 'light');
 applyTheme(preferredTheme);
 applyMode();
+renderTags();
+renderList();
