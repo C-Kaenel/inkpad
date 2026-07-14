@@ -22,3 +22,4 @@ export function renderInline(text) {
     return `\u0000${codes.length - 1}\u0000`;
   });
 
+  out = out
