@@ -3,3 +3,4 @@
 // blockquotes, ordered / unordered / task lists, tables and horizontal rules.
 
 export function escapeHtml(text) {
+  return text
