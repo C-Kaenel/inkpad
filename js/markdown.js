@@ -16,3 +16,9 @@ function safeUrl(url) {
 }
 
 export function renderInline(text) {
+  const codes = [];
+  let out = escapeHtml(text).replace(/`([^`]+)`/g, (_, code) => {
+    codes.push(code);
+    return `\u0000${codes.length - 1}\u0000`;
+  });
+
