@@ -237,3 +237,5 @@ applyTheme(preferredTheme);
 applyMode();
 renderTags();
 renderList();
+renderEditor();
+setInterval(renderList, 60000);
