@@ -28,3 +28,8 @@ export function renderInline(text) {
     .replace(/\*\*([^*]+)\*\*/g, '<strong>$1</strong>')
     .replace(/__([^_]+)__/g, '<strong>$1</strong>')
     .replace(/\*([^*]+)\*/g, '<em>$1</em>')
+    .replace(/(^|\W)_([^_]+)_(?=\W|$)/g, '$1<em>$2</em>')
+    .replace(/~~([^~]+)~~/g, '<del>$1</del>')
+    .replace(/==([^=]+)==/g, '<mark>$1</mark>')
+    .replace(/(^|\s)#([a-z0-9][\w-]*)/gi, '$1<span class="tag">#$2</span>');
+
