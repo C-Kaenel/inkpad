@@ -23,3 +23,4 @@ export function renderInline(text) {
   });
 
   out = out
+    .replace(/!\[([^\]]*)\]\(([^)\s]+)\)/g, (_, alt, src) => `<img src="${safeUrl(src)}" alt="${alt}">`)
