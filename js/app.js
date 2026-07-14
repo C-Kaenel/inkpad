@@ -231,3 +231,7 @@ window.addEventListener('keydown', (e) => {
 });
 
 const preferredTheme =
+  localStorage.getItem('inkpad.theme') ||
+  (matchMedia('(prefers-color-scheme: dark)').matches ? 'dark' : 'light');
+applyTheme(preferredTheme);
+applyMode();
