@@ -10,3 +10,4 @@ export function escapeHtml(text) {
     .replace(/"/g, '&quot;');
 }
 
+function safeUrl(url) {
