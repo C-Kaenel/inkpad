@@ -34,3 +34,4 @@ export function renderInline(text) {
     .replace(/(^|\s)#([a-z0-9][\w-]*)/gi, '$1<span class="tag">#$2</span>');
 
   return out.replace(/\u0000(\d+)\u0000/g, (_, i) => `<code>${codes[Number(i)]}</code>`);
+}
