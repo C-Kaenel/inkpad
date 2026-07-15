@@ -44,3 +44,4 @@ function renderTable(rows) {
   const body = rows.slice(2).map((r) => `<tr>${split(r).map((c, i) => cell('td', c, i)).join('')}</tr>`);
   return `<table><thead><tr>${head.map((c, i) => cell('th', c, i)).join('')}</tr></thead><tbody>${body.join('')}</tbody></table>`;
 }
+
