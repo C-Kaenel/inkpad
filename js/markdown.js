@@ -37,3 +37,6 @@ export function renderInline(text) {
 }
 
 function renderTable(rows) {
+  const split = (row) => row.replace(/^\||\|$/g, '').split('|').map((c) => c.trim());
+  const head = split(rows[0]);
+  const aligns = split(rows[1]).map((c) => (c.startsWith(':') && c.endsWith(':') ? 'center' : c.endsWith(':') ? 'right' : ''));
