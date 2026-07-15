@@ -40,3 +40,7 @@ function renderTable(rows) {
   const split = (row) => row.replace(/^\||\|$/g, '').split('|').map((c) => c.trim());
   const head = split(rows[0]);
   const aligns = split(rows[1]).map((c) => (c.startsWith(':') && c.endsWith(':') ? 'center' : c.endsWith(':') ? 'right' : ''));
+  const cell = (tag, text, i) => `<${tag}${aligns[i] ? ` style="text-align:${aligns[i]}"` : ''}>${renderInline(text)}</${tag}>`;
+  const body = rows.slice(2).map((r) => `<tr>${split(r).map((c, i) => cell('td', c, i)).join('')}</tr>`);
+  return `<table><thead><tr>${head.map((c, i) => cell('th', c, i)).join('')}</tr></thead><tbody>${body.join('')}</tbody></table>`;
+}
