@@ -36,3 +36,4 @@ export function renderInline(text) {
   return out.replace(/\u0000(\d+)\u0000/g, (_, i) => `<code>${codes[Number(i)]}</code>`);
 }
 
+function renderTable(rows) {
