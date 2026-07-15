@@ -45,3 +45,4 @@ function renderTable(rows) {
   return `<table><thead><tr>${head.map((c, i) => cell('th', c, i)).join('')}</tr></thead><tbody>${body.join('')}</tbody></table>`;
 }
 
+export function renderMarkdown(source) {
