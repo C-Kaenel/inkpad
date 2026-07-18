@@ -71,3 +71,4 @@ export function renderMarkdown(source) {
       continue;
     }
 
+    const heading = line.match(/^(#{1,6})\s+(.*)$/);
