@@ -52,3 +52,4 @@ export function renderMarkdown(source) {
 
   const isBlank = (l) => l.trim() === '';
 
+  while (i < lines.length) {
