@@ -66,3 +66,7 @@ export function renderMarkdown(source) {
       i++;
       while (i < lines.length && !lines[i].startsWith('```')) body.push(lines[i++]);
       i++;
+      const lang = fence[1] ? ` class="lang-${fence[1]}"` : '';
+      html.push(`<pre><code${lang}>${escapeHtml(body.join('\n'))}</code></pre>`);
+      continue;
+    }
