@@ -50,3 +50,5 @@ export function renderMarkdown(source) {
   const html = [];
   let i = 0;
 
+  const isBlank = (l) => l.trim() === '';
+
