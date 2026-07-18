@@ -60,3 +60,4 @@ export function renderMarkdown(source) {
       continue;
     }
 
+    const fence = line.match(/^```(\w*)/);
