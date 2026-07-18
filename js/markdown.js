@@ -55,3 +55,7 @@ export function renderMarkdown(source) {
   while (i < lines.length) {
     const line = lines[i];
 
+    if (isBlank(line)) {
+      i++;
+      continue;
+    }
