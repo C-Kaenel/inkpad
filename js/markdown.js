@@ -61,3 +61,6 @@ export function renderMarkdown(source) {
     }
 
     const fence = line.match(/^```(\w*)/);
+    if (fence) {
+      const body = [];
+      i++;
