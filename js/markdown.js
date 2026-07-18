@@ -70,3 +70,4 @@ export function renderMarkdown(source) {
       html.push(`<pre><code${lang}>${escapeHtml(body.join('\n'))}</code></pre>`);
       continue;
     }
+
