@@ -64,3 +64,5 @@ export function renderMarkdown(source) {
     if (fence) {
       const body = [];
       i++;
+      while (i < lines.length && !lines[i].startsWith('```')) body.push(lines[i++]);
+      i++;
