@@ -46,3 +46,7 @@ function renderTable(rows) {
 }
 
 export function renderMarkdown(source) {
+  const lines = source.replace(/\r\n/g, '\n').split('\n');
+  const html = [];
+  let i = 0;
+
