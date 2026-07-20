@@ -86,3 +86,4 @@ export function renderMarkdown(source) {
       continue;
     }
 
+    if (line.startsWith('>')) {
