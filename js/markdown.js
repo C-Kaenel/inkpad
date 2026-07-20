@@ -80,3 +80,4 @@ export function renderMarkdown(source) {
       continue;
     }
 
+    if (/^(-{3,}|\*{3,})$/.test(line.trim())) {
