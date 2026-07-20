@@ -73,3 +73,9 @@ export function renderMarkdown(source) {
 
     const heading = line.match(/^(#{1,6})\s+(.*)$/);
     if (heading) {
+      const level = heading[1].length;
+      const id = heading[2].toLowerCase().replace(/[^\w]+/g, '-').replace(/^-|-$/g, '');
+      html.push(`<h${level} id="${id}">${renderInline(heading[2])}</h${level}>`);
+      i++;
+      continue;
+    }
