@@ -81,3 +81,7 @@ export function renderMarkdown(source) {
     }
 
     if (/^(-{3,}|\*{3,})$/.test(line.trim())) {
+      html.push('<hr>');
+      i++;
+      continue;
+    }
