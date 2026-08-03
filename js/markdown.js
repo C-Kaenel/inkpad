@@ -113,3 +113,4 @@ export function renderMarkdown(source) {
           const checked = task[1].toLowerCase() === 'x' ? ' checked' : '';
           return `<li class="task"><input type="checkbox" disabled${checked}> ${renderInline(task[2])}</li>`;
         }
+        return `<li>${renderInline(item)}</li>`;
