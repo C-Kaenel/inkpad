@@ -95,3 +95,7 @@ export function renderMarkdown(source) {
 
     if (line.includes('|') && i + 1 < lines.length && /^\s*\|?\s*:?-+:?\s*(\|\s*:?-+:?\s*)*\|?\s*$/.test(lines[i + 1])) {
       const rows = [];
+      while (i < lines.length && lines[i].includes('|')) rows.push(lines[i++]);
+      html.push(renderTable(rows));
+      continue;
+    }
