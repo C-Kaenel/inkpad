@@ -121,3 +121,4 @@ export function renderMarkdown(source) {
     }
 
     const paragraph = [];
+    while (
