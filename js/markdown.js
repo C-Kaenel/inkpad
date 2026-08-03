@@ -114,3 +114,4 @@ export function renderMarkdown(source) {
           return `<li class="task"><input type="checkbox" disabled${checked}> ${renderInline(task[2])}</li>`;
         }
         return `<li>${renderInline(item)}</li>`;
+      });
