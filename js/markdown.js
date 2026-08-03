@@ -119,3 +119,4 @@ export function renderMarkdown(source) {
       html.push(`<${tag}>${rendered.join('')}</${tag}>`);
       continue;
     }
+
