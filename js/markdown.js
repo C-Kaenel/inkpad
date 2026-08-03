@@ -100,3 +100,4 @@ export function renderMarkdown(source) {
       continue;
     }
 
+    const listMatch = line.match(/^(\s*)([-*+]|\d+\.)\s+/);
