@@ -94,3 +94,4 @@ export function renderMarkdown(source) {
     }
 
     if (line.includes('|') && i + 1 < lines.length && /^\s*\|?\s*:?-+:?\s*(\|\s*:?-+:?\s*)*\|?\s*$/.test(lines[i + 1])) {
+      const rows = [];
