@@ -115,3 +115,7 @@ export function renderMarkdown(source) {
         }
         return `<li>${renderInline(item)}</li>`;
       });
+      const tag = ordered ? 'ol' : 'ul';
+      html.push(`<${tag}>${rendered.join('')}</${tag}>`);
+      continue;
+    }
