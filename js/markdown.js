@@ -87,3 +87,8 @@ export function renderMarkdown(source) {
     }
 
     if (line.startsWith('>')) {
+      const quote = [];
+      while (i < lines.length && lines[i].startsWith('>')) quote.push(lines[i++].replace(/^>\s?/, ''));
+      html.push(`<blockquote>${renderMarkdown(quote.join('\n'))}</blockquote>`);
+      continue;
+    }
