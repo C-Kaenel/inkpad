@@ -107,3 +107,4 @@ export function renderMarkdown(source) {
       while (i < lines.length && /^\s*([-*+]|\d+\.)\s+/.test(lines[i])) {
         items.push(lines[i++].replace(/^\s*([-*+]|\d+\.)\s+/, ''));
       }
+      const rendered = items.map((item) => {
