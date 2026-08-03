@@ -99,3 +99,4 @@ export function renderMarkdown(source) {
       html.push(renderTable(rows));
       continue;
     }
+
