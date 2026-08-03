@@ -101,3 +101,9 @@ export function renderMarkdown(source) {
     }
 
     const listMatch = line.match(/^(\s*)([-*+]|\d+\.)\s+/);
+    if (listMatch) {
+      const ordered = /\d/.test(listMatch[2]);
+      const items = [];
+      while (i < lines.length && /^\s*([-*+]|\d+\.)\s+/.test(lines[i])) {
+        items.push(lines[i++].replace(/^\s*([-*+]|\d+\.)\s+/, ''));
+      }
