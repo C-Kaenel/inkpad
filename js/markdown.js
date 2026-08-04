@@ -122,3 +122,9 @@ export function renderMarkdown(source) {
 
     const paragraph = [];
     while (
+      i < lines.length &&
+      !isBlank(lines[i]) &&
+      !/^(#{1,6}\s|```|>|\s*([-*+]|\d+\.)\s)/.test(lines[i])
+    ) {
+      paragraph.push(lines[i++]);
+    }
