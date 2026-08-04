@@ -134,3 +134,8 @@ export function renderMarkdown(source) {
   return html.join('\n');
 }
 
+export function extractTags(source) {
+  const tags = new Set();
+  for (const match of source.matchAll(/(^|\s)#([a-z0-9][\w-]*)/gi)) tags.add(match[2].toLowerCase());
+  return [...tags].sort();
+}
