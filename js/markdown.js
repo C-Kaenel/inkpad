@@ -131,3 +131,5 @@ export function renderMarkdown(source) {
     html.push(`<p>${paragraph.map(renderInline).join('<br>')}</p>`);
   }
 
+  return html.join('\n');
+}
