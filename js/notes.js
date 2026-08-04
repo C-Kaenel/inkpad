@@ -6,3 +6,9 @@ const WELCOME = `# Welcome to Inkpad ✍️
 
 Inkpad is a tiny **Markdown** notebook that lives in your browser.
 
+## Things to try
+- [x] Write some *Markdown*
+- [ ] Add a tag like #ideas or #todo
+- [ ] Press \`Ctrl + K\` to search
+- [ ] Toggle the theme with the ☾ button
+
