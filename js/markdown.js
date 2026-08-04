@@ -144,3 +144,5 @@ export function extractTitle(source) {
   const heading = source.match(/^#\s+(.+)$/m);
   if (heading) return heading[1].trim();
   const first = source.split('\n').find((l) => l.trim());
+  return first ? first.trim().slice(0, 60) : 'Untitled';
+}
