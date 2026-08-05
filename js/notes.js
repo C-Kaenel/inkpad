@@ -33,3 +33,4 @@ export class NoteStore {
     if (this.notes.length === 0) this.create(WELCOME);
   }
 
+  load() {
