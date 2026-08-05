@@ -15,3 +15,4 @@ Inkpad is a tiny **Markdown** notebook that lives in your browser.
 > Notes are saved automatically in localStorage.
 
 | Shortcut | Action |
+| --- | --- |
