@@ -26,3 +26,9 @@ function uid() {
 }
 
 export class NoteStore {
+  constructor(storage = globalThis.localStorage) {
+    this.storage = storage;
+    this.listeners = new Set();
+    this.notes = this.load();
+    if (this.notes.length === 0) this.create(WELCOME);
+  }
