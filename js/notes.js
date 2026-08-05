@@ -16,3 +16,8 @@ Inkpad is a tiny **Markdown** notebook that lives in your browser.
 
 | Shortcut | Action |
 | --- | --- |
+| Ctrl + N | New note |
+| Ctrl + K | Search |
+| Ctrl + P | Toggle preview |
+`;
+
