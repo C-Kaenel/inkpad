@@ -21,3 +21,4 @@ Inkpad is a tiny **Markdown** notebook that lives in your browser.
 | Ctrl + P | Toggle preview |
 `;
 
+function uid() {
