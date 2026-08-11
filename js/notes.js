@@ -43,3 +43,8 @@ export class NoteStore {
   }
 
   persist() {
+    try {
+      this.storage?.setItem(STORAGE_KEY, JSON.stringify(this.notes));
+    } catch {
+      // storage might be full or unavailable — keep working in memory
+    }
