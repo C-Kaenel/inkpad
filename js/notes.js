@@ -51,3 +51,7 @@ export class NoteStore {
     this.listeners.forEach((fn) => fn(this.notes));
   }
 
+  subscribe(fn) {
+    this.listeners.add(fn);
+    return () => this.listeners.delete(fn);
+  }
