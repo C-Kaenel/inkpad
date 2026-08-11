@@ -56,3 +56,4 @@ export class NoteStore {
     return () => this.listeners.delete(fn);
   }
 
+  create(body = '# New note\n\n') {
