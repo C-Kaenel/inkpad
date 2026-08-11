@@ -55,3 +55,4 @@ export class NoteStore {
     this.listeners.add(fn);
     return () => this.listeners.delete(fn);
   }
+
