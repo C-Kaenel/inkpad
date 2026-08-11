@@ -57,3 +57,4 @@ export class NoteStore {
   }
 
   create(body = '# New note\n\n') {
+    const now = Date.now();
