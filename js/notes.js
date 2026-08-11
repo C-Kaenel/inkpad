@@ -35,3 +35,8 @@ export class NoteStore {
 
   load() {
     try {
+      const raw = this.storage?.getItem(STORAGE_KEY);
+      return raw ? JSON.parse(raw) : [];
+    } catch {
+      return [];
+    }
