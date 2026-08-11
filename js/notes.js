@@ -58,3 +58,8 @@ export class NoteStore {
 
   create(body = '# New note\n\n') {
     const now = Date.now();
+    const note = { id: uid(), body, pinned: false, created: now, updated: now };
+    this.notes.unshift(note);
+    this.persist();
+    return note;
+  }
