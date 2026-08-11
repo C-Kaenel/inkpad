@@ -49,3 +49,5 @@ export class NoteStore {
       // storage might be full or unavailable — keep working in memory
     }
     this.listeners.forEach((fn) => fn(this.notes));
+  }
+
