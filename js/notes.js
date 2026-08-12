@@ -86,3 +86,6 @@ export class NoteStore {
   }
 
   remove(id) {
+    this.notes = this.notes.filter((n) => n.id !== id);
+    this.persist();
+  }
