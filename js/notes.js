@@ -79,3 +79,8 @@ export class NoteStore {
 
   togglePin(id) {
     const note = this.get(id);
+    if (!note) return null;
+    note.pinned = !note.pinned;
+    this.persist();
+    return note;
+  }
