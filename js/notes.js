@@ -90,3 +90,4 @@ export class NoteStore {
     this.persist();
   }
 
+  search({ query = '', tag = null } = {}) {
