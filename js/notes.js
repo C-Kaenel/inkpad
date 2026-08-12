@@ -64,3 +64,4 @@ export class NoteStore {
     return note;
   }
 
+  get(id) {
