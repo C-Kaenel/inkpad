@@ -84,3 +84,4 @@ export class NoteStore {
     this.persist();
     return note;
   }
+
