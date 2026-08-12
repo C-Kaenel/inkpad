@@ -77,3 +77,4 @@ export class NoteStore {
     return note;
   }
 
+  togglePin(id) {
