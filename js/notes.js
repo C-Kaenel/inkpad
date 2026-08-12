@@ -72,3 +72,7 @@ export class NoteStore {
     const note = this.get(id);
     if (!note || note.body === body) return note;
     note.body = body;
+    note.updated = Date.now();
+    this.persist();
+    return note;
+  }
