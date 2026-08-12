@@ -85,3 +85,4 @@ export class NoteStore {
     return note;
   }
 
+  remove(id) {
