@@ -65,3 +65,5 @@ export class NoteStore {
   }
 
   get(id) {
+    return this.notes.find((n) => n.id === id) || null;
+  }
