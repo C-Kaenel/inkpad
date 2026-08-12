@@ -78,3 +78,4 @@ export class NoteStore {
   }
 
   togglePin(id) {
+    const note = this.get(id);
