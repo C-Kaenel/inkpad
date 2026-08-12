@@ -68,3 +68,7 @@ export class NoteStore {
     return this.notes.find((n) => n.id === id) || null;
   }
 
+  update(id, body) {
+    const note = this.get(id);
+    if (!note || note.body === body) return note;
+    note.body = body;
