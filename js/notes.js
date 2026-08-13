@@ -91,3 +91,10 @@ export class NoteStore {
   }
 
   search({ query = '', tag = null } = {}) {
+    const q = query.trim().toLowerCase();
+    return this.notes
+      .filter((n) => !q || n.body.toLowerCase().includes(q))
+      .filter((n) => !tag || extractTags(n.body).includes(tag))
+      .map((n) => ({ ...n, title: extractTitle(n.body), tags: extractTags(n.body) }))
+      .sort((a, b) => Number(b.pinned) - Number(a.pinned) || b.updated - a.updated);
+  }
