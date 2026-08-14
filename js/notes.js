@@ -111,3 +111,4 @@ export class NoteStore {
     return JSON.stringify(this.notes, null, 2);
   }
 
+  importJson(text) {
