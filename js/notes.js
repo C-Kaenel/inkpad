@@ -120,3 +120,4 @@ export class NoteStore {
       this.notes.push({ ...n, id: known.has(n.id) ? uid() : n.id || uid() });
     }
     this.persist();
+    return incoming.length;
