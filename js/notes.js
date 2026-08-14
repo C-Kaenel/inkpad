@@ -106,3 +106,4 @@ export class NoteStore {
     }
     return [...counts.entries()].sort((a, b) => b[1] - a[1] || a[0].localeCompare(b[0]));
   }
+
