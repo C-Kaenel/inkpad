@@ -112,3 +112,10 @@ export class NoteStore {
   }
 
   importJson(text) {
+    const incoming = JSON.parse(text);
+    if (!Array.isArray(incoming)) throw new Error('Expected an array of notes');
+    const known = new Set(this.notes.map((n) => n.id));
+    for (const n of incoming) {
+      if (typeof n.body !== 'string') continue;
+      this.notes.push({ ...n, id: known.has(n.id) ? uid() : n.id || uid() });
+    }
