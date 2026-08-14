@@ -100,3 +100,4 @@ export class NoteStore {
   }
 
   allTags() {
+    const counts = new Map();
