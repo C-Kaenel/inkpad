@@ -99,3 +99,4 @@ export class NoteStore {
       .sort((a, b) => Number(b.pinned) - Number(a.pinned) || b.updated - a.updated);
   }
 
+  allTags() {
