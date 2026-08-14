@@ -104,3 +104,5 @@ export class NoteStore {
     for (const n of this.notes) {
       for (const t of extractTags(n.body)) counts.set(t, (counts.get(t) || 0) + 1);
     }
+    return [...counts.entries()].sort((a, b) => b[1] - a[1] || a[0].localeCompare(b[0]));
+  }
