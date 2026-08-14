@@ -119,3 +119,4 @@ export class NoteStore {
       if (typeof n.body !== 'string') continue;
       this.notes.push({ ...n, id: known.has(n.id) ? uid() : n.id || uid() });
     }
+    this.persist();
