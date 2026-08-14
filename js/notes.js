@@ -110,3 +110,4 @@ export class NoteStore {
   exportJson() {
     return JSON.stringify(this.notes, null, 2);
   }
+
