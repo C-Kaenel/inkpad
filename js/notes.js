@@ -101,3 +101,6 @@ export class NoteStore {
 
   allTags() {
     const counts = new Map();
+    for (const n of this.notes) {
+      for (const t of extractTags(n.body)) counts.set(t, (counts.get(t) || 0) + 1);
+    }
