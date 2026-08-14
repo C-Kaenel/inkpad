@@ -98,3 +98,4 @@ export class NoteStore {
       .map((n) => ({ ...n, title: extractTitle(n.body), tags: extractTags(n.body) }))
       .sort((a, b) => Number(b.pinned) - Number(a.pinned) || b.updated - a.updated);
   }
+
