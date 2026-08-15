@@ -134,3 +134,4 @@ export function relativeTime(timestamp, now = Date.now()) {
     ['hour', 3600],
     ['minute', 60],
   ];
+  for (const [unit, size] of units) {
