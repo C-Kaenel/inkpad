@@ -128,3 +128,5 @@ export function relativeTime(timestamp, now = Date.now()) {
   const seconds = Math.round((now - timestamp) / 1000);
   if (seconds < 45) return 'just now';
   const units = [
+    ['year', 31536000],
+    ['month', 2592000],
