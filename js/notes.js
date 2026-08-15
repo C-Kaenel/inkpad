@@ -125,3 +125,6 @@ export class NoteStore {
 }
 
 export function relativeTime(timestamp, now = Date.now()) {
+  const seconds = Math.round((now - timestamp) / 1000);
+  if (seconds < 45) return 'just now';
+  const units = [
