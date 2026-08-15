@@ -135,3 +135,6 @@ export function relativeTime(timestamp, now = Date.now()) {
     ['minute', 60],
   ];
   for (const [unit, size] of units) {
+    const value = Math.floor(seconds / size);
+    if (value >= 1) return `${value} ${unit}${value > 1 ? 's' : ''} ago`;
+  }
