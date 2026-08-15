@@ -124,3 +124,4 @@ export class NoteStore {
   }
 }
 
+export function relativeTime(timestamp, now = Date.now()) {
