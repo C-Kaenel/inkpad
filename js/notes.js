@@ -122,3 +122,5 @@ export class NoteStore {
     this.persist();
     return incoming.length;
   }
+}
+
