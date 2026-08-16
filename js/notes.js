@@ -142,3 +142,6 @@ export function relativeTime(timestamp, now = Date.now()) {
 }
 
 export function wordCount(text) {
+  const words = text.replace(/[#>*_`~\-[\]()|]/g, ' ').trim().split(/\s+/).filter(Boolean);
+  return words.length;
+}
