@@ -141,3 +141,4 @@ export function relativeTime(timestamp, now = Date.now()) {
   return 'just now';
 }
 
+export function wordCount(text) {
