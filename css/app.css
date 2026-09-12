@@ -26,3 +26,6 @@
   --danger: #f87171;
 }
 
+* {
+  box-sizing: border-box;
+}
