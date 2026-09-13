@@ -77,3 +77,7 @@ button {
   place-items: center;
   width: 32px;
   height: 32px;
+  border-radius: 8px;
+  background: var(--accent);
+  color: #fff;
+}
