@@ -84,3 +84,9 @@ button {
 
 .icon-btn {
   margin-left: auto;
+  border: none;
+  background: transparent;
+  font-size: 1.1rem;
+  padding: 4px 8px;
+  border-radius: 6px;
+}
