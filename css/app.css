@@ -73,3 +73,4 @@ button {
 }
 
 .brand-mark {
+  display: grid;
