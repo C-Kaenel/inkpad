@@ -64,3 +64,4 @@ button {
 }
 
 .brand {
+  display: flex;
