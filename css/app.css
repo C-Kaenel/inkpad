@@ -92,3 +92,5 @@ button {
 }
 
 .icon-btn:hover {
+  background: var(--border);
+}
