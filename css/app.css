@@ -124,3 +124,8 @@ button {
   filter: brightness(1.08);
 }
 
+.tags {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 6px;
+}
