@@ -139,3 +139,6 @@ button {
 }
 
 .chip span {
+  color: var(--muted);
+  margin-left: 2px;
+}
