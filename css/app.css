@@ -184,3 +184,6 @@ button {
 
 .note-snippet {
   font-size: 0.82rem;
+  color: var(--muted);
+  margin: 3px 0;
+  display: -webkit-box;
