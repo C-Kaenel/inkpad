@@ -169,3 +169,8 @@ button {
   background: var(--surface);
 }
 
+.note-item.active {
+  background: var(--surface);
+  border-color: var(--border);
+  box-shadow: inset 3px 0 0 var(--accent);
+}
