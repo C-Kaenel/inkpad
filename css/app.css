@@ -197,3 +197,6 @@ button {
   color: var(--muted);
 }
 
+.pin {
+  margin-right: 4px;
+}
