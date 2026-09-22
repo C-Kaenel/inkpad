@@ -166,3 +166,5 @@ button {
 }
 
 .note-item:hover {
+  background: var(--surface);
+}
