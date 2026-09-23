@@ -208,3 +208,8 @@ button {
 }
 
 .sidebar-footer {
+  display: flex;
+  justify-content: space-between;
+  border-top: 1px solid var(--border);
+  padding-top: 10px;
+}
