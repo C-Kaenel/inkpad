@@ -216,3 +216,8 @@ button {
 
 .link-btn {
   background: none;
+  border: none;
+  color: var(--muted);
+  font-size: 0.85rem;
+  cursor: pointer;
+}
