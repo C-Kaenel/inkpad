@@ -248,3 +248,7 @@ button {
   font-size: 0.82rem;
 }
 
+.toolbar-actions {
+  display: flex;
+  gap: 8px;
+}
