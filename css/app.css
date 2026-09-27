@@ -254,3 +254,9 @@ button {
 }
 
 .toolbar-actions button {
+  border: 1px solid var(--border);
+  background: var(--surface);
+  border-radius: 8px;
+  padding: 6px 12px;
+  font-size: 0.85rem;
+}
