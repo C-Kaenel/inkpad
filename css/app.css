@@ -261,3 +261,4 @@ button {
   font-size: 0.85rem;
 }
 
+.toolbar-actions button:disabled {
