@@ -266,3 +266,4 @@ button {
   cursor: default;
 }
 
+.toolbar-actions .danger:hover:not(:disabled) {
