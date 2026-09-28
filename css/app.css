@@ -282,3 +282,6 @@ button {
   grid-template-columns: 1fr 0;
 }
 
+.workspace[data-mode='preview'] {
+  grid-template-columns: 0 1fr;
+}
