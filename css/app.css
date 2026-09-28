@@ -267,3 +267,6 @@ button {
 }
 
 .toolbar-actions .danger:hover:not(:disabled) {
+  color: var(--danger);
+  border-color: var(--danger);
+}
