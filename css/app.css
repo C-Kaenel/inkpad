@@ -278,3 +278,4 @@ button {
   min-height: 0;
 }
 
+.workspace[data-mode='edit'] {
