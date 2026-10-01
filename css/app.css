@@ -286,3 +286,7 @@ button {
   grid-template-columns: 0 1fr;
 }
 
+.workspace[data-mode='edit'] .preview,
+.workspace[data-mode='preview'] .editor {
+  display: none;
+}
