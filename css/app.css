@@ -305,3 +305,7 @@ button {
 }
 
 .preview {
+  overflow-y: auto;
+  padding: 28px 40px;
+  background: var(--surface);
+}
