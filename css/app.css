@@ -316,3 +316,7 @@ button {
 
 /* ---------- rendered markdown ---------- */
 
+.markdown-body {
+  line-height: 1.7;
+  max-width: 760px;
+}
