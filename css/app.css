@@ -334,3 +334,7 @@ button {
 }
 
 .markdown-body h2 {
+  font-size: 1.4rem;
+  padding-bottom: 0.3em;
+  border-bottom: 1px solid var(--border);
+}
