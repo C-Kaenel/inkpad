@@ -339,3 +339,6 @@ button {
   border-bottom: 1px solid var(--border);
 }
 
+.markdown-body a {
+  color: var(--accent);
+}
