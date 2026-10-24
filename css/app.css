@@ -352,3 +352,8 @@ button {
 }
 
 .markdown-body pre {
+  background: var(--code-bg);
+  padding: 14px 16px;
+  border-radius: var(--radius);
+  overflow-x: auto;
+}
