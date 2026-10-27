@@ -359,3 +359,6 @@ button {
 }
 
 .markdown-body pre code {
+  background: none;
+  padding: 0;
+}
