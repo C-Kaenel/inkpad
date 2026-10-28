@@ -378,3 +378,7 @@ button {
 }
 
 .markdown-body th,
+.markdown-body td {
+  border: 1px solid var(--border);
+  padding: 6px 12px;
+}
