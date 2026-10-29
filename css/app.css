@@ -405,3 +405,9 @@ button {
 }
 
 .markdown-body .tag {
+  color: var(--accent);
+  background: var(--accent-soft);
+  border-radius: 999px;
+  padding: 1px 8px;
+  font-size: 0.85em;
+}
