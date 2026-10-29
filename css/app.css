@@ -387,3 +387,7 @@ button {
   background: var(--code-bg);
 }
 
+.markdown-body li.task {
+  list-style: none;
+  margin-left: -1.3em;
+}
