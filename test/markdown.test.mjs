@@ -12,3 +12,4 @@ test('renders inline formatting', () => {
     renderInline('**bold** *it* `code` ~~gone~~'),
     '<strong>bold</strong> <em>it</em> <code>code</code> <del>gone</del>',
   );
+});
