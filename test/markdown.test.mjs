@@ -7,3 +7,4 @@ test('renders headings with ids', () => {
   assert.strictEqual(renderMarkdown('## Hello World'), '<h2 id="hello-world">Hello World</h2>');
 });
 
+test('renders inline formatting', () => {
