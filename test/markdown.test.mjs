@@ -13,3 +13,4 @@ test('renders inline formatting', () => {
     '<strong>bold</strong> <em>it</em> <code>code</code> <del>gone</del>',
   );
 });
+
