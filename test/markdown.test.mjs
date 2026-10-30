@@ -14,3 +14,8 @@ test('renders inline formatting', () => {
   );
 });
 
+test('escapes html and blocks javascript urls', () => {
+  assert.strictEqual(renderInline('<script>'), '&lt;script&gt;');
+  assert.match(renderInline('[x](javascript:alert(1))'), /href="#"/);
+});
+
