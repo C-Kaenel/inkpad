@@ -8,3 +8,7 @@ test('renders headings with ids', () => {
 });
 
 test('renders inline formatting', () => {
+  assert.strictEqual(
+    renderInline('**bold** *it* `code` ~~gone~~'),
+    '<strong>bold</strong> <em>it</em> <code>code</code> <del>gone</del>',
+  );
