@@ -20,3 +20,4 @@ test('escapes html and blocks javascript urls', () => {
 });
 
 test('renders lists and tasks', () => {
+  const html = renderMarkdown('- one\n- [x] done\n- [ ] todo');
