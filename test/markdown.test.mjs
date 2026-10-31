@@ -25,3 +25,4 @@ test('renders lists and tasks', () => {
   assert.match(html, /checked> done/);
 });
 
+test('renders code fences without formatting inside', () => {
