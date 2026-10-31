@@ -21,3 +21,7 @@ test('escapes html and blocks javascript urls', () => {
 
 test('renders lists and tasks', () => {
   const html = renderMarkdown('- one\n- [x] done\n- [ ] todo');
+  assert.match(html, /<ul><li>one<\/li>/);
+  assert.match(html, /checked> done/);
+});
+
