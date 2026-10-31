@@ -19,3 +19,4 @@ test('escapes html and blocks javascript urls', () => {
   assert.match(renderInline('[x](javascript:alert(1))'), /href="#"/);
 });
 
+test('renders lists and tasks', () => {
