@@ -47,3 +47,4 @@ function memoryStorage() {
 }
 
 test('note store creates a welcome note and supports search', () => {
+  const store = new NoteStore(memoryStorage());
