@@ -46,3 +46,4 @@ function memoryStorage() {
   return { getItem: (k) => data[k] ?? null, setItem: (k, v) => (data[k] = v) };
 }
 
+test('note store creates a welcome note and supports search', () => {
