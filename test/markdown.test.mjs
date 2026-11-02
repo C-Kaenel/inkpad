@@ -36,3 +36,4 @@ test('renders tables', () => {
 });
 
 test('extracts tags and titles', () => {
+  assert.deepStrictEqual(extractTags('# Title\nSome #Ideas and #todo-list #ideas'), ['ideas', 'todo-list']);
