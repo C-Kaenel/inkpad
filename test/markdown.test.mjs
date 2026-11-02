@@ -30,3 +30,4 @@ test('renders code fences without formatting inside', () => {
 });
 
 test('renders tables', () => {
+  const html = renderMarkdown('| a | b |\n| --- | ---: |\n| 1 | 2 |');
