@@ -29,3 +29,4 @@ test('renders code fences without formatting inside', () => {
   assert.strictEqual(renderMarkdown('```js\nconst a = **b**;\n```'), '<pre><code class="lang-js">const a = **b**;</code></pre>');
 });
 
+test('renders tables', () => {
