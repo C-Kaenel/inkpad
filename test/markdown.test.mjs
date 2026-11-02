@@ -41,3 +41,4 @@ test('extracts tags and titles', () => {
   assert.strictEqual(extractTitle(''), 'Untitled');
 });
 
+function memoryStorage() {
