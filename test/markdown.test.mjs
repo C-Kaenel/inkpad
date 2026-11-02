@@ -35,3 +35,4 @@ test('renders tables', () => {
   assert.match(html, /<td style="text-align:right">2<\/td>/);
 });
 
+test('extracts tags and titles', () => {
