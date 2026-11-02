@@ -31,3 +31,7 @@ test('renders code fences without formatting inside', () => {
 
 test('renders tables', () => {
   const html = renderMarkdown('| a | b |\n| --- | ---: |\n| 1 | 2 |');
+  assert.match(html, /<th>a<\/th>/);
+  assert.match(html, /<td style="text-align:right">2<\/td>/);
+});
+
