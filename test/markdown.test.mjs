@@ -42,3 +42,6 @@ test('extracts tags and titles', () => {
 });
 
 function memoryStorage() {
+  const data = {};
+  return { getItem: (k) => data[k] ?? null, setItem: (k, v) => (data[k] = v) };
+}
