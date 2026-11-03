@@ -64,3 +64,5 @@ test('pinned notes are listed first', () => {
 
 test('relative time and word count helpers', () => {
   const now = 1_000_000_000;
+  assert.strictEqual(relativeTime(now - 10_000, now), 'just now');
+  assert.strictEqual(relativeTime(now - 3 * 3600_000, now), '3 hours ago');
