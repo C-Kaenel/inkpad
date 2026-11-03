@@ -54,3 +54,4 @@ test('note store creates a welcome note and supports search', () => {
   assert.strictEqual(store.search({ tag: 'shopping' })[0].title, 'Groceries');
 });
 
+test('pinned notes are listed first', () => {
