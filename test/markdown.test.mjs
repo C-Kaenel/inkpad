@@ -55,3 +55,4 @@ test('note store creates a welcome note and supports search', () => {
 });
 
 test('pinned notes are listed first', () => {
+  const store = new NoteStore(memoryStorage());
