@@ -62,3 +62,4 @@ test('pinned notes are listed first', () => {
   assert.strictEqual(store.search()[0].title, 'A');
 });
 
+test('relative time and word count helpers', () => {
