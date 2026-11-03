@@ -58,3 +58,7 @@ test('pinned notes are listed first', () => {
   const store = new NoteStore(memoryStorage());
   const a = store.create('# A');
   store.create('# B');
+  store.togglePin(a.id);
+  assert.strictEqual(store.search()[0].title, 'A');
+});
+
