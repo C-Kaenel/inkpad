@@ -14,3 +14,4 @@ No accounts, no backend, no dependencies — your notes stay in `localStorage`.
 - Word count and reading time
 
 ## Keyboard shortcuts
+
