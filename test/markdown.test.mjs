@@ -63,3 +63,4 @@ test('pinned notes are listed first', () => {
 });
 
 test('relative time and word count helpers', () => {
+  const now = 1_000_000_000;
