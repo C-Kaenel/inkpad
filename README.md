@@ -13,3 +13,4 @@ No accounts, no backend, no dependencies — your notes stay in `localStorage`.
 - Export / import all notes as JSON
 - Word count and reading time
 
+## Keyboard shortcuts
