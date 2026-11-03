@@ -48,3 +48,9 @@ function memoryStorage() {
 
 test('note store creates a welcome note and supports search', () => {
   const store = new NoteStore(memoryStorage());
+  assert.strictEqual(store.notes.length, 1);
+  store.create('# Groceries\n#shopping milk');
+  assert.strictEqual(store.search({ query: 'milk' }).length, 1);
+  assert.strictEqual(store.search({ tag: 'shopping' })[0].title, 'Groceries');
+});
+
