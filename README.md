@@ -15,3 +15,4 @@ No accounts, no backend, no dependencies — your notes stay in `localStorage`.
 
 ## Keyboard shortcuts
 
+| Shortcut | Action |
