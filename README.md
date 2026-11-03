@@ -5,3 +5,4 @@ No accounts, no backend, no dependencies — your notes stay in `localStorage`.
 
 ## Features
 
+- Live split-view editor with a hand-written Markdown renderer
