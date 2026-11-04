@@ -41,3 +41,4 @@ All Markdown is HTML-escaped before formatting is applied, and links are restric
 
 ## License
 
+MIT
