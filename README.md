@@ -24,3 +24,7 @@ No accounts, no backend, no dependencies — your notes stay in `localStorage`.
 
 ## Run it
 
+```bash
+npx serve .
+```
+
