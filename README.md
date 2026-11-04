@@ -36,3 +36,6 @@ npm test
 
 ## Security
 
+All Markdown is HTML-escaped before formatting is applied, and links are restricted to
+`http(s)`, `mailto` and relative URLs — so `javascript:` links can't sneak in.
+
