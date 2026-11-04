@@ -28,3 +28,4 @@ No accounts, no backend, no dependencies — your notes stay in `localStorage`.
 npx serve .
 ```
 
+Then open http://localhost:3000. Tests for the Markdown renderer and note store:
