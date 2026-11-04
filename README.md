@@ -22,3 +22,4 @@ No accounts, no backend, no dependencies — your notes stay in `localStorage`.
 | `Ctrl + P` | Cycle split / edit / preview |
 | `Tab` | Indent in editor |
 
+## Run it
