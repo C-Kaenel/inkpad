@@ -17,3 +17,8 @@ No accounts, no backend, no dependencies — your notes stay in `localStorage`.
 
 | Shortcut | Action |
 | --- | --- |
+| `Ctrl + N` | New note |
+| `Ctrl + K` | Focus search |
+| `Ctrl + P` | Cycle split / edit / preview |
+| `Tab` | Indent in editor |
+
