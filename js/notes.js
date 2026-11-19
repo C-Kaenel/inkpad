@@ -2,7 +2,7 @@ import { extractTags, extractTitle } from './markdown.js';
 
 const STORAGE_KEY = 'inkpad.notes.v1';
 
-const WELCOME = `# Welcome to Inkpad ✍️
+const WELCOME = `# Welcome to Inkpad
 
 Inkpad is a tiny **Markdown** notebook that lives in your browser.
 
@@ -10,7 +10,7 @@ Inkpad is a tiny **Markdown** notebook that lives in your browser.
 - [x] Write some *Markdown*
 - [ ] Add a tag like #ideas or #todo
 - [ ] Press \`Ctrl + K\` to search
-- [ ] Toggle the theme with the ☾ button
+- [ ] Toggle the theme with the theme button
 
 > Notes are saved automatically in localStorage.
 

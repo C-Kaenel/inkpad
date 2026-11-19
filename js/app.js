@@ -48,7 +48,7 @@ function renderList() {
     li.dataset.id = note.id;
     const preview = note.body.replace(/^#.*$/m, '').replace(/[#*_`>[\]-]/g, '').trim().slice(0, 80);
     li.innerHTML = `
-      <div class="note-title">${note.pinned ? '<span class="pin">📌</span>' : ''}${escape(note.title)}</div>
+      <div class="note-title">${note.pinned ? '<span class="pin">Pinned ·</span>' : ''}${escape(note.title)}</div>
       <div class="note-snippet">${escape(preview) || '<em>Empty note</em>'}</div>
       <div class="note-date">${relativeTime(note.updated)}</div>`;
     els.list.appendChild(li);
@@ -186,7 +186,7 @@ async function importNotes(event) {
 
 function applyTheme(theme) {
   document.documentElement.dataset.theme = theme;
-  els.themeBtn.textContent = theme === 'dark' ? '☀' : '☾';
+  els.themeBtn.textContent = theme === 'dark' ? 'Light' : 'Dark';
   localStorage.setItem('inkpad.theme', theme);
 }
 
